@@ -4,7 +4,7 @@ using System.Text;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
-namespace MIS421CapstoneFinalProject.Data
+namespace MIS421CapstoneFinalProject.DataAccess.Data
 {
     public class ApplicationDbContext : IdentityDbContext
     {

@@ -3,13 +3,13 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using MIS421CapstoneFinalProject.Models;
 
 namespace MIS421CapstoneFinalProject.Controllers
 {
+    [Area("Customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;
@@ -23,7 +23,7 @@ namespace MIS421CapstoneFinalProject.Controllers
         {
             return View();
         }
-        [Authorize]
+
         public IActionResult Privacy()
         {
             return View();

@@ -1,4 +1,4 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <TargetFramework>netcoreapp3.0</TargetFramework>
@@ -12,4 +12,8 @@
     <PackageReference Include="Microsoft.Extensions.Identity.Stores" Version="3.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MIS421CapstoneFinalProject.Models\MIS421CapstoneFinalProject.Models.csproj" />
+    <ProjectReference Include="..\MIS421CapstoneFinalProject.Utility\MIS421CapstoneFinalProject.Utility.csproj" />
+  </ItemGroup>
 </Project>
