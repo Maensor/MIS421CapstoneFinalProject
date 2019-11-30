@@ -16,4 +16,9 @@
     <ProjectReference Include="..\MIS421CapstoneFinalProject.Models\MIS421CapstoneFinalProject.Models.csproj" />
     <ProjectReference Include="..\MIS421CapstoneFinalProject.Utility\MIS421CapstoneFinalProject.Utility.csproj" />
   </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Data\Initializer\" />
+    <Folder Include="Data\Migrations\" />
+  </ItemGroup>
 </Project>
