@@ -5,7 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
-using MIS421CapstoneFinalProject.DataAccess.Data.Repository;
+using MIS421CapstoneFinalProject.DataAccess.Data.Repository.IRepository;
 using MIS421CapstoneFinalProject.Extensions;
 using MIS421CapstoneFinalProject.Models;
 using MIS421CapstoneFinalProject.Models.ViewModels;
