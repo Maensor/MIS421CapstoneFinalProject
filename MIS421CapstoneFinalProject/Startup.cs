@@ -1,3 +1,5 @@
+using System;
+using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Builder;
@@ -13,7 +15,6 @@ using MIS421CapstoneFinalProject.DataAccess.Data;
 using MIS421CapstoneFinalProject.DataAccess.Data.Repository.IRepository;
 using MIS421CapstoneFinalProject.DataAccess.Data.Repository;
 using MIS421CapstoneFinalProject.DataAccess.Data.Initializer;
-using System;
 
 namespace MIS421CapstoneFinalProject
 {
@@ -40,8 +41,7 @@ namespace MIS421CapstoneFinalProject
                     Configuration.GetConnectionString("DefaultConnection")));
             services.AddIdentity<IdentityUser, IdentityRole>()
                 .AddEntityFrameworkStores<ApplicationDbContext>()
-                .AddDefaultTokenProviders();//.
-               // AddDefaultUI(UIFramework.Bootstrap4);
+                .AddDefaultTokenProviders();
 
             services.AddScoped<IUnitOfWork, UnitOfWork>();
             services.AddScoped<IDbInitializer, DbInitializer>();
